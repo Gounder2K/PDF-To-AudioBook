@@ -12,4 +12,5 @@ for num in range(0,pages):
     text = page.extract_text()
     player = pyttsx3.init()
     player.say(text)
+    player.save_to_file(text, 'test.mp3')
     player.runAndWait()
